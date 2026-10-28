@@ -57,3 +57,7 @@ O usuário reprovou os supostos templates Linha Azul e Recepção: as alteraçõ
 ## 2026-10-28 — Implementação dos modelos a partir dos PDFs originais
 
 Corrigindo a falha da tentativa anterior, foi criado um editor com campos estruturados que reproduz ordem, cabeçalhos e divisórias dos modelos TI (azul) e recepcionista (preto), sem exemplos de dados pessoais incorporados no aplicativo. Mantido o JSON v1 importável com campos ausentes normalizados. A reprodução visual foi implementada, mas a fidelidade pixel a pixel e a impressão A4 precisam de comparação manual; CI testa compilação, não equivalência visual. README atualizado.
+
+## 2026-10-28 — UX das abas, sem refazer currículos
+
+A pedido do responsável, a reprodução de PDFs foi pausada. A home ganhou hierarquia editorial com progresso derivado de dados reais, próximos passos e uma lista de navegação direta, substituindo hero motivacional e três cards decorativos. O seletor de arquivo tornou-se global para corrigir o fluxo de importação em Configurações e Perfil. A aplicação permanece sem métricas de recrutamento simuladas. README atualizado; validação visual manual ainda necessária.

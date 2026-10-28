@@ -115,3 +115,7 @@ Os PDFs de referência **Linha Azul (TI)** e **Recepção** foram identificados,
 ### Reprodução dos currículos de referência
 
 O estúdio agora possui as diagramações **TI · linhas azuis** e **Recepcionista · preto** a partir dos PDFs originais (não publicados). Campos de contato, objetivo, experiência, formação, cursos, competências e idiomas são independentes e editáveis; seções sem conteúdo não aparecem no documento. A importação de JSON v1 continua compatível. A comparação visual lado a lado e a conferência da paginação A4 ainda são etapas pendentes; não declaramos cópia perfeita.
+
+### Redesenho da experiência de navegação
+
+A página Início foi reconstruída como um espaço editorial de trabalho: mostra uma única próxima ação, percentual de campos essenciais calculado com dados reais, acesso direto a Perfil, Currículo e Configurações e explicita o que ainda não está pronto. Removemos o hero com gradiente e a grade de cartões repetidos. Também corrigimos o acesso global ao seletor de arquivo, para a importação JSON funcionar tanto em Perfil quanto em Configurações. A qualidade visual final depende de revisão em navegador real.
