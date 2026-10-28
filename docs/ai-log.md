@@ -53,3 +53,7 @@ Foram localizados os PDFs privados usados anteriormente na preparação profissi
 ## 2026-10-28 — Correção de implementação inadequada
 
 O usuário reprovou os supostos templates Linha Azul e Recepção: as alterações de CSS não preservavam a diagramação dos PDFs. As mudanças visuais imprecisas foram revertidas. Os originais permanecem privados. O trabalho de fidelidade será tratado como reprodução verificável, não criação de novo estilo.
+
+## 2026-10-28 — Implementação dos modelos a partir dos PDFs originais
+
+Corrigindo a falha da tentativa anterior, foi criado um editor com campos estruturados que reproduz ordem, cabeçalhos e divisórias dos modelos TI (azul) e recepcionista (preto), sem exemplos de dados pessoais incorporados no aplicativo. Mantido o JSON v1 importável com campos ausentes normalizados. A reprodução visual foi implementada, mas a fidelidade pixel a pixel e a impressão A4 precisam de comparação manual; CI testa compilação, não equivalência visual. README atualizado.

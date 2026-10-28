@@ -3,8 +3,8 @@ import { createRoot } from 'react-dom/client';
 import './style.css';
 import { ResumeStudio } from './resume-studio';
 
-type Profile = { name: string; headline: string; goal: string; skills: string; resume: string; linkedin: string };
-const initial: Profile = { name: '', headline: '', goal: '', skills: '', resume: '', linkedin: '' };
+type Profile = { name: string; headline: string; goal: string; skills: string; resume: string; linkedin: string; contact: string; education: string; experience: string; courses: string; languages: string };
+const initial: Profile = { name: '', headline: '', goal: '', skills: '', resume: '', linkedin: '', contact: '', education: '', experience: '', courses: '', languages: '' };
 const fields: { key: keyof Profile; label: string; hint: string; multiline?: boolean }[] = [
   { key: 'name', label: 'Nome profissional', hint: 'Como você deseja aparecer no currículo' },
   { key: 'headline', label: 'Área ou título profissional', hint: 'Ex.: estudante de Ciência da Computação' },
@@ -17,7 +17,7 @@ const fields: { key: keyof Profile; label: string; hint: string; multiline?: boo
 function isProfile(value: unknown): value is Profile {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return false;
   const obj = value as Record<string, unknown>;
-  return fields.every(({ key }) => typeof obj[key] === 'string' && obj[key].length <= 100000);
+  return fields.every(({ key }) => typeof obj[key] === 'string' && obj[key].length <= 100000) && ['contact','education','experience','courses','languages'].every(key => obj[key] === undefined || (typeof obj[key] === 'string' && obj[key].length <= 100000));
 }
 const STORAGE_KEY = 'careerhub-profile-v1';
 const THEME_KEY = 'careerhub-theme-v1';
@@ -43,7 +43,7 @@ function App() {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const data: unknown = JSON.parse(saved);
-        if (isProfile(data)) { setProfile(data); setAutoSave(true); setMessage('Perfil restaurado deste navegador.'); }
+        if (isProfile(data)) { setProfile({ ...initial, ...data }); setAutoSave(true); setMessage('Perfil restaurado deste navegador.'); }
       }
     } catch { setMessage('Falha na restauração. Importe seu backup JSON.'); }
   }, []);
@@ -76,7 +76,7 @@ function App() {
       const input: unknown = JSON.parse(await file.text());
       const data = input as { format?: unknown; version?: unknown; profile?: unknown };
       if (data.format !== 'careerhub-profile' || data.version !== 1 || !isProfile(data.profile)) throw Error('Formato inválido');
-      setProfile(data.profile); setMessage('Perfil importado neste navegador. Salve novamente para manter alterações.');
+      setProfile({ ...initial, ...data.profile }); setMessage('Perfil importado neste navegador. Salve novamente para manter alterações.');
     } catch { setMessage('Não foi possível importar. Use um arquivo exportado pelo CareerHub.'); }
     event.target.value = '';
   }

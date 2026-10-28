@@ -37,3 +37,7 @@ O modelo de dados atual só tem nome, headline, objetivo, competências e campo 
 ## Retificação
 
 A implementação inicial desses templates foi reprovada: foram criados estilos aproximados em vez de preservar integralmente os PDFs. Os estilos foram revertidos. Este documento é **uma especificação incompleta de referência**, não prova de fidelidade. O layout final precisa ser comparado diretamente aos documentos em escala A4, com dados neutralizados; não usar thumbnails genéricas ou interpretações livres.
+
+## Iteração de implementação posterior à reprovação
+
+Os layouts foram reimplementados com cabeçalho e ordem de seções específicos e dados editáveis independentes. As referências originais continuam privadas. Ainda não foi concluída a comparação visual em PDF de saída, portanto a conformidade final permanece em revisão. O editor não inventa informações faltantes; espaços ficam vazios ou seções são omitidas.
