@@ -9,7 +9,7 @@ permissions:
   id-token: write
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   deploy:
     environment:
@@ -27,6 +27,10 @@ jobs:
       - name: Compilar prévia com caminho do repositório
         working-directory: frontend
         run: npm run build -- --base=/CareerHub/
+      - name: Conferir arquivos de publicação
+        run: |
+          test -s frontend/dist/index.html
+          test -d frontend/dist/assets
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
