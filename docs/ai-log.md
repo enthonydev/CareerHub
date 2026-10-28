@@ -25,3 +25,7 @@ Implementação assistida por IA de salvamento opcional via localStorage e edito
 Implementação com assistência de IA: aba Configurações, tema claro/escuro persistente via armazenamento local independente dos dados do perfil, transição CSS e opção `prefers-reduced-motion`. O currículo impresso mantém fundo branco. Critérios visuais dependem de conferência no navegador; build automatizado será verificado no PR.
 
 **Refinamento visual solicitado:** elevar o frontend a padrão de produto profissional, com tipografia consistente, espaçamentos, tratamento de foco, responsividade, microinterações e movimento reduzido. Adicionado design system versionado, sem frameworks pesados de animação.
+
+## 2026-10-28 — Correção do 404 no Pages
+
+Diagnóstico por inspeção dos workflows na `main`: `pages.yml` publica a compilação React, mas `static.yml` também publicava, enviando a raiz do repositório. A IA identificou a colisão, removeu o workflow redundante e adicionou verificação do artefato antes do deploy. A publicação ainda exige verificação real após o merge. README e guia de deploy atualizados.
