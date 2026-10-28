@@ -19,3 +19,7 @@ O produto foi especificado por direção humana. Um assistente de IA produziu sc
 ## 2026-10-28 — S1b: editor e salvamento opt-in
 
 Implementação assistida por IA de salvamento opcional via localStorage e editor textual com prévia/print. Mantido o README atualizado no mesmo PR. Ainda requer validação visual e de persistência no navegador; localStorage não equivale a banco ou armazenamento seguro de longo prazo. O uso de computador compartilhado não é recomendado.
+
+## 2026-10-28 — S1c: configurações e temas
+
+Implementação com assistência de IA: aba Configurações, tema claro/escuro persistente via armazenamento local independente dos dados do perfil, transição CSS e opção `prefers-reduced-motion`. O currículo impresso mantém fundo branco. Critérios visuais dependem de conferência no navegador; build automatizado será verificado no PR.
