@@ -22,3 +22,7 @@ A mensagem de API indisponível é esperada em Pages. A aplicação completa req
 ## Execução local
 
 Siga os comandos do README para iniciar FastAPI e Vite separadamente no Windows.
+
+## Incidente: deploy concorrente e 404 (2026-10-28)
+
+Dois workflows estavam publicando no mesmo ambiente `github-pages`: o específico do React compilava `frontend/dist`, enquanto o template estático fazia upload de `.` (raiz do repositório). Uma publicação do template poderia substituir o frontend compilado por arquivos sem `index.html` na raiz e causar 404. O template foi removido; o workflow correto passou a verificar a existência de `dist/index.html` e `dist/assets` antes de publicar. O README foi atualizado no mesmo PR. Confirmar deploy e URL após merge.
