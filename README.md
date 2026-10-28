@@ -24,11 +24,11 @@ A tipografia é **Plus Jakarta Sans**, disponível sob SIL Open Font License, in
 
 ## Experimente
 
-A [prévia no GitHub Pages](https://enthonydev.github.io/CareerHub/) permite preencher seu perfil, importar/exportar JSON, usar um editor básico de currículo com prévia e impressão em PDF e escolher entre **modo claro e escuro** na aba Configurações.
+A [prévia no GitHub Pages](https://enthonydev.github.io/CareerHub/) permite preencher seu perfil, importar/exportar JSON, usar um estúdio de currículo com edição por campos, dois estilos, prévia ao vivo e impressão em PDF e escolher entre **modo claro e escuro** na aba Configurações.
 
 **Privacidade:** você pode ativar o salvamento automático neste navegador. É opcional e não deve ser usado em computadores compartilhados. A limpeza dos dados do navegador pode apagar o perfil, portanto mantenha um backup JSON. Nenhum dado desses recursos é enviado ao GitHub ou à OpenAI.
 
-O editor atual é textual e básico. Importação de PDF/DOCX, templates avançados, notas ATS, vagas, análise LinkedIn e OpenAI **ainda estão em desenvolvimento**.
+O estúdio atual utiliza os campos do perfil, mostra o documento em tempo real e oferece os estilos Essencial e Contemporâneo; ainda não há reordenação avançada de seções nem geração DOCX. Importação de PDF/DOCX, templates avançados, notas ATS, vagas, análise LinkedIn e OpenAI **ainda estão em desenvolvimento**.
 
 ## O que estou construindo
 
