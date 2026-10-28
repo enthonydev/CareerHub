@@ -33,3 +33,7 @@ Diagnóstico por inspeção dos workflows na `main`: `pages.yml` publica a compi
 ## 2026-10-28 — Identidade visual própria
 
 O direcionamento humano pediu um produto que não tivesse aparência de UI genérica gerada por IA. Foi criado símbolo SVG original, um guia de marca, tipografia e nova linguagem editorial, com ajustes na navegação, alternância rápida de tema e hierarquia das telas. README atualizado no mesmo PR. A aprovação visual real depende de inspeção no browser após a publicação.
+
+## 2026-10-28 — UX: home e Configurações
+
+A pedido do responsável, o frontend deixou de usar o painel vazio e introduziu uma home com ações reais. Foi removido o grande seletor redundante de tema; Configurações concentra salvamento e portabilidade. Fonte Plus Jakarta Sans pesquisada, com licença OFL e instalada localmente. A IA gerou código e documentação, o CI verifica build e testes, e a revisão visual real ainda deve ser feita no navegador.

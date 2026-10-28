@@ -42,3 +42,11 @@
 - Navegação por teclado com foco visível, visual mobile e tipografia consistente.
 - Prévia de currículo para impressão permanece branca em ambos os temas.
 - README atualizado e verificações de build e responsividade.
+
+## Evolução de experiência: Dashboard e Configurações
+
+- [x] Home com ações reais ligadas a Perfil, Currículo, Configurações e Roadmap.
+- [x] Substituição do seletor grande de tema por indicador informativo em Configurações.
+- [x] Controles de salvamento e importação/exportação nas Configurações.
+- [x] Plus Jakarta Sans empacotada localmente; identidade refinada e adaptável.
+- [ ] Validação visual e de navegação em dispositivos reais após deploy.
