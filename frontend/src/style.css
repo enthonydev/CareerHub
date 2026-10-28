@@ -32,3 +32,78 @@ body,.main,.workspace,.progress,.save-control,article,.milestones,.notice,.sideb
 @media(max-width:650px){.theme-choices{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){body,.main,.workspace,.progress,.save-control,article,.milestones,.notice,.sidebar,.tag,.secondary,label input,label textarea,.theme-choice{transition:none!important}.theme-choice:hover{transform:none}}
 @media print{html[data-theme="dark"] body,html[data-theme="dark"] .resume-paper{background:white!important;color:#172641!important}}
+
+
+/* CareerHub Design System v1: restrained, premium, accessible, lightweight. */
+:root{
+  --ch-accent:#466be7;--ch-accent-2:#6d5fe9;--ch-shadow:0 8px 34px rgba(24,45,84,.055);
+  --ch-radius:18px;--ch-ease:cubic-bezier(.22,1,.36,1)
+}
+html[data-theme="dark"]{--ch-shadow:0 14px 38px rgba(0,0,0,.14)}
+body{font-family:Inter,"Segoe UI Variable","Segoe UI",system-ui,-apple-system,sans-serif;letter-spacing:-.012em;-webkit-font-smoothing:antialiased}
+.app{isolation:isolate}
+.sidebar{position:sticky;top:0;height:100vh;min-height:650px;overflow-y:auto;background:linear-gradient(160deg,#122b4d 0%,#0c1930 75%,#10192e 100%);border-right:1px solid rgba(255,255,255,.07)}
+html[data-theme="dark"] .sidebar{background:linear-gradient(160deg,#121c33,#090f1c 80%)}
+.brandmark{background:linear-gradient(145deg,#849efb,#4b66e7);box-shadow:0 7px 20px #4d70db40;border:1px solid #ffffff3d}
+.brand strong{font-size:20px}
+.sidebar nav button{position:relative;transition:background .26s var(--ch-ease),color .26s ease,transform .26s var(--ch-ease);font-size:13px;letter-spacing:.005em;border:1px solid transparent}
+.sidebar nav button:hover{background:rgba(255,255,255,.075);color:#fff;transform:translateX(3px)}
+.sidebar nav button.selected{background:linear-gradient(105deg,rgba(95,130,240,.28),rgba(94,136,212,.10));border-color:rgba(170,196,250,.12);box-shadow:inset 3px 0 0 #92afff;color:#fff}
+.sidebar nav button:focus-visible,.actions button:focus-visible,.resume-tools button:focus-visible,.theme-choice:focus-visible{outline:3px solid #90abff;outline-offset:3px}
+.main{padding-top:36px}
+.topbar{padding-bottom:18px;border-bottom:1px solid var(--line);font-weight:750}
+.tag{font-weight:650}
+.intro{margin-top:40px}
+.intro h1{font-weight:780;line-height:1.16;letter-spacing:-.045em;max-width:780px}
+.intro p:not(.eyebrow){font-size:14px}
+.workspace,.progress,.save-control{border-radius:var(--ch-radius);box-shadow:var(--ch-shadow)}
+.workspace{padding:34px}
+.progressbar i{background:linear-gradient(90deg,#4f74e8,#9d7af0);transition:width .55s var(--ch-ease)}
+.notice{border-left:3px solid #6f8af2}
+.section-heading h2{font-weight:760;letter-spacing:-.025em}
+.actions button,.resume-tools button{transition:transform .23s var(--ch-ease),box-shadow .23s var(--ch-ease),background .23s ease}
+.actions button:hover,.resume-tools button:hover{transform:translateY(-2px)}
+.actions .primary:hover,.resume-tools .primary:hover{box-shadow:0 8px 18px rgba(73,103,211,.24)}
+.actions button:active,.resume-tools button:active,.theme-choice:active{transform:translateY(0) scale(.985)}
+label input:not([type="checkbox"]),label textarea{transition:border-color .2s ease,box-shadow .2s ease,background-color .3s ease}
+label input:hover,label textarea:hover{border-color:#a9b8d4}
+label input:focus,label textarea:focus{border-color:#718df1!important;box-shadow:0 0 0 4px rgba(90,121,234,.14)!important}
+.editor-grid{align-items:start}
+.editor-input textarea{line-height:1.65}
+.resume-paper{border-radius:7px;max-width:650px;margin-inline:auto;box-shadow:0 14px 38px #192f5212}
+.theme-choice{min-height:146px;position:relative;overflow:hidden}
+.theme-choice:before{content:"";position:absolute;inset:auto -15% -70% auto;width:155px;height:155px;background:radial-gradient(circle,rgba(106,135,244,.16),transparent 70%);pointer-events:none}
+.theme-choice.chosen:after{content:"✓";position:absolute;right:17px;top:17px;font-weight:900;color:var(--accent);width:24px;height:24px;border:1px solid var(--accent);border-radius:50%;display:grid;place-items:center;font-size:12px}
+.theme-choice .theme-symbol{height:43px;width:43px;border-radius:12px;background:linear-gradient(135deg,#c4d4ff,#edf1ff);color:#3d5abf;display:grid;place-items:center;font-size:23px}
+html[data-theme="dark"] .theme-choice .theme-symbol{background:linear-gradient(130deg,#354d87,#202e53);color:#dbe6ff}
+.theme-choice span:not(.theme-symbol){font-size:15px}
+@keyframes ch-enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.intro,.workspace,.notice,.save-control{animation:ch-enter .42s var(--ch-ease) both}
+.workspace{animation-delay:.04s}
+@media(min-width:1500px){.main{padding-left:64px;padding-right:64px}}
+@media(max-width:900px){.sidebar{width:208px}.main{padding:26px}.workspace{padding:24px}.intro h1{font-size:33px}}
+@media(max-width:650px){
+ .sidebar{height:auto;min-height:0;position:relative;padding:17px 16px 12px}
+ .brand{padding-left:0}
+ .sidebar nav{display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin;padding-bottom:4px;margin-top:16px}
+ .sidebar nav button{white-space:nowrap;flex-shrink:0;padding:11px 12px}
+ .sidebar nav button:hover{transform:none}
+ .sidebar nav button.selected{box-shadow:inset 0 -2px 0 #92afff}
+ .main{padding:20px 16px}
+ .topbar{font-size:10px}
+ .tag{font-size:10px;padding:7px 9px}
+ .intro{margin:30px 0 20px}
+ .intro h1{font-size:31px}
+ .workspace{padding:20px 16px}
+ .actions{width:100%}
+ .actions button{flex:1}
+ .section-heading{margin-bottom:23px}
+ .save-control{align-items:flex-start}
+ .resume-paper{padding:22px!important}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;scroll-behavior:auto!important}
+ .sidebar nav button,.actions button,.resume-tools button,.progressbar i{transition:none!important}
+ .sidebar nav button:hover,.actions button:hover,.resume-tools button:hover{transform:none!important}
+}
+@media print{.sidebar{display:none!important}.intro,.workspace,.resume-paper{animation:none!important}.resume-paper{box-shadow:none!important;max-width:none!important}}
