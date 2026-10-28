@@ -36,3 +36,7 @@
 ## Evolução
 
 Novos componentes devem reutilizar tokens e padrões existentes. Alterações estruturais na identidade visual devem atualizar este documento e o README no mesmo PR.
+
+## Identidade da marca
+
+A especificação de marca, cores e aplicações está em [brand.md](brand.md). O símbolo oficial é um SVG pequeno, independente de assets externos. Alterações futuras devem revisar ambos os documentos.

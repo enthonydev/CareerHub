@@ -1,8 +1,14 @@
 # CareerHub
 
-**Seu currículo, LinkedIn e próximas oportunidades. Em um único lugar, no seu controle.**
+![Símbolo oficial do CareerHub](frontend/public/brand/careerhub-mark.svg)
+
+**Um espaço para organizar sua trajetória e preparar o próximo passo.**
 
 [Ver prévia online](https://enthonydev.github.io/CareerHub/) · [Roadmap](docs/roadmap.md) · [Arquitetura](docs/architecture.md) · [Como contribuir](CONTRIBUTING.md)
+
+## Uma identidade própria
+
+O CareerHub agora tem símbolo vetorial original, cores, tipografia e um conjunto de padrões para que a interface mantenha a mesma qualidade em todas as telas. Também há um atalho para alternar entre claro e escuro sem entrar em Configurações. [Conheça a identidade](docs/brand.md).
 
 ## O projeto
 

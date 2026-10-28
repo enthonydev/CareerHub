@@ -107,3 +107,64 @@ html[data-theme="dark"] .theme-choice .theme-symbol{background:linear-gradient(1
  .sidebar nav button:hover,.actions button:hover,.resume-tools button:hover{transform:none!important}
 }
 @media print{.sidebar{display:none!important}.intro,.workspace,.resume-paper{animation:none!important}.resume-paper{box-shadow:none!important;max-width:none!important}}
+
+
+/* CareerHub / identity 02 — typographic and product refinement */
+:root{--ch-cobalt:#567BEE;--ch-violet:#7467DF;--ch-mint:#28B6A2;--ch-ink:#16233E;--ch-paper:#F8FAFD}
+body{background:#F5F7FB}
+html[data-theme="dark"] body{background:#101622}
+.sidebar{background:#101A2C!important;border-right:1px solid #ffffff12!important;padding:30px 18px!important}
+.brand{gap:12px!important;align-items:center!important;padding:0 9px!important}
+.brandmark{display:block!important;object-fit:contain!important;width:43px!important;height:43px!important;border:0!important;border-radius:14px!important;background:transparent!important;box-shadow:0 7px 25px #5F7AFF22!important}
+.brand strong{font-size:19px!important;letter-spacing:-.055em!important;line-height:1.05}
+.brand-accent{color:#97ACFF}
+.brand small{font-size:11px!important;letter-spacing:.01em;color:#8799B6!important;margin-top:6px!important}
+.sidebar nav{margin-top:62px!important;gap:7px!important}
+.sidebar nav button{border-radius:11px!important;font-size:13px!important;min-height:46px!important;font-weight:550!important;padding:12px 14px!important}
+.sidebar nav button.selected{background:#283755!important;border:1px solid #ffffff15!important;box-shadow:none!important}
+.sidebar nav button.selected:before{content:"";height:17px;width:3px;position:absolute;left:0;top:calc(50% - 8px);background:#9BAEFF;border-radius:3px}
+.sidebar-bottom{border-top:1px solid #ffffff15;padding-top:22px!important}
+.main{max-width:1300px!important;padding:36px clamp(24px,4vw,60px)!important}
+.topbar{border-bottom:0!important;padding:0!important;min-height:38px;color:var(--muted)!important}
+.breadcrumb{letter-spacing:.13em;font-size:11px;font-weight:750}
+.breadcrumb-slash{margin:0 10px;color:#8798B0}
+.quick-theme{display:inline-flex;gap:10px;align-items:center;justify-content:center;min-height:40px;padding:8px 16px;background:var(--surface);border:1px solid var(--line);border-radius:22px;color:var(--ink);font-size:13px;font-weight:650;box-shadow:var(--ch-shadow);transition:transform .2s ease,background-color .3s ease}
+.quick-theme:hover{transform:translateY(-2px)}
+.intro{margin-top:50px!important;gap:40px}
+.intro h1{font-size:clamp(32px,3.8vw,51px)!important;letter-spacing:-.065em!important;font-weight:740!important;line-height:1.13!important;max-width:690px}
+.intro p:not(.eyebrow){font-size:15px!important;line-height:1.7!important;max-width:540px!important}
+.eyebrow{letter-spacing:.18em!important;color:#5D7ADC!important;font-size:11px!important}
+html[data-theme="dark"] .eyebrow{color:#9DAFFF!important}
+.progress{min-width:192px!important;padding:22px 24px!important}
+.progress strong{font-size:37px!important;letter-spacing:-.055em}
+.progressbar{height:5px!important}
+.notice{background:#EEF3FD!important;color:#4B6080!important;border:1px solid #DDE8FC!important;border-left:3px solid #8BA5EF!important;font-size:13px!important}
+html[data-theme="dark"] .notice{background:#1B2A42!important;color:#B7C7DD!important;border-color:#304563!important}
+.workspace{border-radius:20px!important;padding:clamp(24px,3vw,38px)!important}
+.section-heading h2{font-size:22px!important;font-weight:730!important;letter-spacing:-.04em!important}
+.section-heading p{max-width:460px}
+.form-grid{gap:26px 23px!important}
+label span{font-size:12px!important;letter-spacing:.01em}
+label input:not([type="checkbox"]),label textarea{border-radius:12px!important;padding:15px!important;line-height:1.55!important}
+.actions button,.resume-tools button{border-radius:11px!important;min-height:43px!important}
+.actions .primary,.resume-tools .primary{background:#5475E6!important;box-shadow:0 7px 20px #5076DC20}
+.save-control{border-radius:15px!important}
+.resume-paper{border-radius:5px!important}
+.settings-panel{margin-top:30px!important}
+.theme-choice{border-radius:17px!important}
+footer{font-size:12px;letter-spacing:.01em}
+@media(max-width:750px){
+ .sidebar{padding:16px!important}
+ .brand{padding:0!important}
+ .sidebar nav{margin-top:20px!important;gap:6px!important}
+ .sidebar nav button{padding:10px 12px!important;min-height:41px!important}
+ .main{padding:26px 18px!important}
+ .intro{margin-top:36px!important}
+ .intro h1{font-size:35px!important}
+ .progress{margin-top:25px}
+ .quick-theme span{display:none}
+ .quick-theme{height:40px;width:40px;padding:0}
+ .workspace{padding:21px!important}
+}
+@media print{.quick-theme{display:none!important}.resume-paper{box-shadow:none!important}}
+@media(prefers-reduced-motion:reduce){.quick-theme{transition:none!important}.quick-theme:hover{transform:none!important}}
