@@ -7,7 +7,8 @@
 | S1b | Salvamento opt-in no navegador e editor textual com prévia | Validado pelo usuário |
 | S1c | Configurações: temas claro/escuro, transição e preferência local | Em revisão |
 | S1d | Persistência local segura no backend, upload e backup | Planejado |
-| S2 | Templates avançados, versões e exportação DOCX | Planejado |
+| S2a | Estúdio documental, estilos Essencial/Contemporâneo e exportação pelo navegador | Em revisão |
+| S2b | Versões, templates avançados e exportação DOCX | Planejado |
 | S3 | Avaliação de currículo com rubrica 0–10 | Planejado |
 | S4 | Vagas, requisitos e compatibilidade explicável | Planejado |
 | S5 | Adaptação orientada à vaga e aprovação de alterações | Planejado |
@@ -50,3 +51,11 @@
 - [x] Controles de salvamento e importação/exportação nas Configurações.
 - [x] Plus Jakarta Sans empacotada localmente; identidade refinada e adaptável.
 - [ ] Validação visual e de navegação em dispositivos reais após deploy.
+
+## Critérios de aceite S2a
+
+- Editar nome, título, objetivo, competências e texto do currículo em um único estúdio.
+- Prévia atualizar em tempo real e preservar o perfil importado.
+- Alternar entre dois estilos de apresentação distintos.
+- Imprimir em A4 sem controles da interface.
+- Checar versão mobile e impressão, sem alegar revisão visual não realizada.
