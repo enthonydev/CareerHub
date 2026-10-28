@@ -69,6 +69,12 @@ O tema escolhido fica salvo no navegador, mesmo sem ativar o salvamento do perfi
 - **IA futura:** OpenAI API opcional, mediante consentimento explícito e controle de gastos. O ChatGPT não inclui créditos de API.
 - **Offline:** edição e regras devem continuar disponíveis sem IA.
 
+## Publicação no GitHub Pages
+
+A prévia é publicada por um **único workflow**: [Prévia do CareerHub no GitHub Pages](.github/workflows/pages.yml). Ele compila o React e publica somente `frontend/dist`, com o caminho `/CareerHub/`.
+
+Se aparecer 404, confira a [aba Actions](https://github.com/enthonydev/CareerHub/actions/workflows/pages.yml) e o [guia de deploy](docs/deploy.md). Não use o template genérico “Deploy static content to Pages” para publicar a raiz do repositório: ela não contém o build do frontend.
+
 ## Diário de desenvolvimento
 
 As decisões e os aprendizados ficam públicos na [documentação de processo](docs/process.md) e no [diário de IA](docs/ai-log.md). Cada PR deve incluir uma atualização do README quando houver mudança perceptível no produto, além de testes, limitações e critérios de aceite.
