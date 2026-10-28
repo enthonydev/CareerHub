@@ -55,3 +55,7 @@ Decisões, critérios de aceite, revisão e autorização de merge pertencem ao 
 ## Licença
 
 A definir antes de distribuição pública de versões executáveis.
+
+## Prévia web (GitHub Pages)
+
+Após ativar **Settings > Pages > Source: GitHub Actions** e integrar o workflow de deploy, a prévia estática estará em https://enthonydev.github.io/CareerHub/. Ela mostra a interface, mas não executa o backend Python. [Guia de publicação](docs/deploy.md).
