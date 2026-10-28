@@ -15,3 +15,7 @@ O produto foi especificado por direção humana. Um assistente de IA produziu sc
 **Implementação gerada com IA:** interface responsiva, formulário, importação e exportação de JSON e validação básica. **Limite:** dados só existem em memória até a exportação; não há persistência, criptografia, IA ou edição de PDF/DOCX nesta fase.
 
 **Revisão:** checar build no Actions e fluxo de importação/exportação no navegador após deploy. Não atribuir testes não executados. A IA pode apoiar revisão e merge conforme autorização expressa do responsável.
+
+## 2026-10-28 — S1b: editor e salvamento opt-in
+
+Implementação assistida por IA de salvamento opcional via localStorage e editor textual com prévia/print. Mantido o README atualizado no mesmo PR. Ainda requer validação visual e de persistência no navegador; localStorage não equivale a banco ou armazenamento seguro de longo prazo. O uso de computador compartilhado não é recomendado.
