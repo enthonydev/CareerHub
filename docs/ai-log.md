@@ -45,3 +45,7 @@ Após crítica de que o design ainda parecia uma interface gerada por template, 
 ## 2026-10-28 — Refatoração do estúdio
 
 Código gerado com auxílio de IA para dividir o editor em módulo próprio (`resume-studio.tsx` e CSS dedicado), mantendo estado do perfil no componente principal. Não é redesign nem funcionalidade nova. Verificação de build no CI e teste manual posterior são obrigatórios. README atualizado no mesmo PR.
+
+## 2026-10-28 — Templates pessoais de referência
+
+Foram localizados os PDFs privados usados anteriormente na preparação profissional. A implementação transpôs as características verificáveis: Linha Azul, de TI, com cabeçalho centralizado e seções com linhas azuis finas; Recepção Clássico, com cabeçalho centralizado e divisórias pretas robustas. Os arquivos originais não foram adicionados ao GitHub. Ainda falta comparação renderizada da saída, e o editor não possui campos estruturados suficientes para cópia exata da disposição original.
