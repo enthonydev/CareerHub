@@ -16,6 +16,12 @@ Comecei o CareerHub porque queria avaliar currículos, compará-los com vagas e 
 
 É também meu **primeiro projeto desenvolvido 100% por vibe coding**: eu defino o produto, reviso entregas e tomo as decisões; agentes de IA participam da implementação, dos testes e da documentação. O objetivo não é esconder esse processo, mas aprender a conduzi-lo com boas práticas de engenharia.
 
+## Nesta versão
+
+O CareerHub ganhou uma **home navegável**, com atalhos reais para Perfil, Currículo e Configurações. As configurações agora apresentam informações de tema, privacidade, importação e exportação sem duplicar o seletor grande: o botão pequeno no topo é o único controle de aparência.
+
+A tipografia é **Plus Jakarta Sans**, disponível sob SIL Open Font License, instalada no pacote frontend e servida pelo próprio site. Assim a fonte não depende de chamadas à Google Fonts durante o uso.
+
 ## Experimente
 
 A [prévia no GitHub Pages](https://enthonydev.github.io/CareerHub/) permite preencher seu perfil, importar/exportar JSON, usar um editor básico de currículo com prévia e impressão em PDF e escolher entre **modo claro e escuro** na aba Configurações.
