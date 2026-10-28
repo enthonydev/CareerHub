@@ -29,3 +29,7 @@ Implementação com assistência de IA: aba Configurações, tema claro/escuro p
 ## 2026-10-28 — Correção do 404 no Pages
 
 Diagnóstico por inspeção dos workflows na `main`: `pages.yml` publica a compilação React, mas `static.yml` também publicava, enviando a raiz do repositório. A IA identificou a colisão, removeu o workflow redundante e adicionou verificação do artefato antes do deploy. A publicação ainda exige verificação real após o merge. README e guia de deploy atualizados.
+
+## 2026-10-28 — Identidade visual própria
+
+O direcionamento humano pediu um produto que não tivesse aparência de UI genérica gerada por IA. Foi criado símbolo SVG original, um guia de marca, tipografia e nova linguagem editorial, com ajustes na navegação, alternância rápida de tema e hierarquia das telas. README atualizado no mesmo PR. A aprovação visual real depende de inspeção no browser após a publicação.
