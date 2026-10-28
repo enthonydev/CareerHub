@@ -38,6 +38,7 @@
 
 - Aba Configurações navegável no Pages.
 - Seleção clara/escura persistente após recarregar.
-- Transição sem bloqueio do navegador, com redução de movimento respeitada.
+- Transição suave e leve, sem bloqueio do navegador, com redução de movimento respeitada.
+- Navegação por teclado com foco visível, visual mobile e tipografia consistente.
 - Prévia de currículo para impressão permanece branca em ambos os temas.
 - README atualizado e verificações de build e responsividade.
