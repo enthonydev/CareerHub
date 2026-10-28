@@ -80,3 +80,11 @@
 - [ ] Reproduzir fielmente as páginas originais, sem dados pessoais nas referências públicas.
 - [ ] Criar campos de conteúdo mantendo posições, tamanhos, linhas, espaçamento e estrutura editorial.
 - [ ] Validar lado a lado com os originais e PDF impresso antes de afirmar conclusão.
+
+## Reprodução dos dois modelos
+
+- [x] Estrutura de campos editáveis e sem dados pessoais pré-preenchidos.
+- [x] Diagramação de uma coluna, títulos, linhas divisórias e ordem de seções conforme referências.
+- [x] Compatibilidade com JSON v1; novos campos opcionais em importações antigas.
+- [ ] Confrontar PDF gerado e original lado a lado em A4 e ajustar métricas finas.
+- [ ] Teste visual real no navegador; impressão multipágina para conteúdo extenso.
