@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+*.pyc
+coverage/
+*.log
+.DS_Store
+careerhub-data/
+user-data/
+*.sqlite3
