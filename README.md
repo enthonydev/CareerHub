@@ -1,61 +1,75 @@
 # CareerHub
 
-> Plataforma local-first de currículos, LinkedIn e análise de vagas, criada como projeto de aprendizado **100% vibe coded, com desenvolvimento assistido por IA e aceite humano**.
+**Seu currículo, LinkedIn e próximas oportunidades. Em um único lugar, no seu controle.**
 
-**Estado:** Sprint 0, fundação inicial. Recursos de currículo, matching, LinkedIn e OpenAI estão planejados, não implementados.
+[Ver prévia online](https://enthonydev.github.io/CareerHub/) · [Roadmap](docs/roadmap.md) · [Arquitetura](docs/architecture.md) · [Como contribuir](CONTRIBUTING.md)
 
-## Visão do produto
+## O projeto
 
-- Perfil profissional mestre, currículos e versões.
-- Nota 0–10 com rubrica transparente, matching de vagas e simulação antes/depois sem inventar competências.
-- Editor e exportação DOCX/PDF, análise LinkedIn PT/EN e histórico de candidaturas.
-- Motor de regras offline; OpenAI API opcional, com consentimento e controle de custos.
+Comecei o CareerHub porque queria avaliar currículos, compará-los com vagas e melhorar meu LinkedIn sem depender de uma assinatura para cada etapa.
 
-## Arquitetura
+É também meu **primeiro projeto desenvolvido 100% por vibe coding**: eu defino o produto, reviso entregas e tomo as decisões; agentes de IA participam da implementação, dos testes e da documentação. O objetivo não é esconder esse processo, mas aprender a conduzi-lo com boas práticas de engenharia.
 
-Frontend React + TypeScript + Vite; backend Python + FastAPI; dados pessoais em JSON/documentos locais, nunca versionados. Sem banco de dados, Docker, Ollama ou SSD obrigatório. Planejado para Windows com Core i3-7020U, 8 GB RAM e HDD.
+## Experimente
 
-## Executar (Sprint 0)
+A [prévia no GitHub Pages](https://enthonydev.github.io/CareerHub/) já permite preencher um perfil profissional e **importar/exportar um JSON** com suas informações.
 
-Requisitos: Python 3.11+, Node.js 20.19+ ou 22.12+ e npm.
+**Atenção:** a prévia não salva automaticamente seus dados. Baixe o JSON antes de atualizar ou fechar a aba. Não há upload para servidores; os dados ficam em memória enquanto a página está aberta. Trate o arquivo exportado como documento pessoal.
 
-Backend, em PowerShell:
+O editor de currículo completo, importação de PDF/DOCX, notas ATS, vagas, análise LinkedIn e OpenAI **ainda estão em desenvolvimento**.
+
+## O que estou construindo
+
+| Funcionalidade | Situação |
+|---|---|
+| Interface web e publicação automática | Disponível |
+| Formulário profissional e JSON portátil no navegador | Disponível |
+| Perfil persistente no computador | Próxima etapa |
+| Editor e exportação de currículo | Planejado |
+| Avaliação 0–10 e compatibilidade com vagas | Planejado |
+| Adaptação de currículo, LinkedIn e OpenAI opcional | Planejado |
+
+Compatibilidade significa **estimativa explicável de aderência documental**, nunca promessa de contratação. Nenhuma experiência profissional será inventada para aumentar notas.
+
+## Rodando localmente
+
+Requer Python 3.11+, Node.js 20.19+ (ou 22.12+) e npm.
 
 ```powershell
+git clone https://github.com/enthonydev/CareerHub.git
+cd CareerHub
 cd backend
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
 
-Frontend, em outro terminal:
+Em outro terminal:
 
 ```powershell
-cd frontend
+cd CareerHub/frontend
 npm install
 npm run dev
 ```
 
-Acesse http://localhost:5173. Teste do backend: `cd backend; python -m pytest`. Os comandos ainda carecem de validação no Windows do usuário.
+Acesse http://localhost:5173. Para testar: `python -m pytest` em `backend` e `npm run build` em `frontend`.
 
-## Documentação viva
+> O notebook-alvo tem Core i3-7020U, 8 GB e HDD. Por isso, priorizo uma experiência leve e sem Docker, banco de dados ou IA pesada local.
 
-- [Arquitetura](docs/architecture.md)
-- [Processo de desenvolvimento](docs/process.md)
-- [Roadmap](docs/roadmap.md)
-- [Diário de IA](docs/ai-log.md)
+## Como funciona
 
-## Vibe coding com responsabilidade
+- **Frontend:** React + TypeScript + Vite.
+- **Backend local:** Python + FastAPI.
+- **Dados futuros:** JSON e documentos no computador, nunca no repositório.
+- **IA futura:** OpenAI API opcional, mediante consentimento explícito e controle de gastos. O ChatGPT não inclui créditos de API.
+- **Offline:** edição e regras devem continuar disponíveis sem IA.
 
-Decisões, critérios de aceite, revisão e autorização de merge pertencem ao responsável humano. IA auxilia no planejamento, código, testes e documentação. O processo inclui branches, pull requests, testes verificáveis e registro de limitações. Não afirmar testes não executados.
+## Diário de desenvolvimento
 
-**Privacidade:** nunca publicar currículos, dados pessoais, tokens, chaves ou arquivos locais no GitHub. API externa somente mediante consentimento; a assinatura ChatGPT não cobre uso da OpenAI API.
+As decisões e os aprendizados ficam públicos na [documentação de processo](docs/process.md) e no [diário de IA](docs/ai-log.md). Cada PR deve incluir uma atualização do README quando houver mudança perceptível no produto, além de testes, limitações e critérios de aceite.
 
-## Licença
+**Status atual:** prévia funcional no navegador; validação do backend no Windows ainda pendente.
 
-A definir antes de distribuição pública de versões executáveis.
-
-## Prévia web (GitHub Pages)
-
-Após ativar **Settings > Pages > Source: GitHub Actions** e integrar o workflow de deploy, a prévia estática estará em https://enthonydev.github.io/CareerHub/. Ela mostra a interface, mas não executa o backend Python. [Guia de publicação](docs/deploy.md).
+---
+Feito com curiosidade, código gerado com IA e revisão contínua.
