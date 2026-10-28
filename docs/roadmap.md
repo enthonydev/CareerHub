@@ -3,9 +3,10 @@
 | Marco | Entrega | Estado |
 |---|---|---|
 | S0 | Fundação frontend/backend, GitHub Pages, CI | Integrado; validação local pendente |
-| S1a | Perfil editável em memória e importação/exportação JSON no Pages | Em implementação |
-| S1b | Persistência local segura no backend, upload e backup | Planejado |
-| S2 | Editor, templates e histórico de currículos | Planejado |
+| S1a | Perfil editável e importação/exportação JSON no Pages | Validado pelo usuário |
+| S1b | Salvamento opt-in no navegador e editor textual com prévia | Em revisão |
+| S1c | Persistência local segura no backend, upload e backup | Planejado |
+| S2 | Templates avançados, versões e exportação DOCX | Planejado |
 | S3 | Avaliação de currículo com rubrica 0–10 | Planejado |
 | S4 | Vagas, requisitos e compatibilidade explicável | Planejado |
 | S5 | Adaptação orientada à vaga e aprovação de alterações | Planejado |
@@ -23,3 +24,11 @@
 - Atualizar README no mesmo PR e manter histórico de desenvolvimento.
 
 **Atenção:** o Pages é apenas uma prévia estática. Persistência e processamento seguro de PDF/DOCX serão feitos localmente na S1b.
+
+## Critérios S1b
+
+- Salvamento opcional no navegador e restauração após recarregar.
+- Desativação apaga cópia armazenada, preservando o formulário aberto.
+- Editor de currículo com prévia e impressão/PDF pelo navegador.
+- Nenhum envio de dados a servidor; backup JSON disponível.
+- Build, fluxo manual e layout responsivo verificados.
