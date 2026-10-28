@@ -73,6 +73,10 @@ Acesse http://localhost:5173. Para testar: `python -m pytest` em `backend` e `np
 
 O tema escolhido fica salvo no navegador, mesmo sem ativar o salvamento do perfil. A interface usa uma paleta própria para claro e escuro, transições leves, navegação responsiva e respeita a preferência de movimento reduzido do sistema. O objetivo é manter boa experiência até em máquinas antigas.
 
+## Organização do frontend
+
+O estúdio de currículos foi separado em `frontend/src/resume-studio.tsx` e `resume-studio.css`, com contratos de dados explícitos. A navegação principal fica em `main.tsx`, reduzindo o risco de regressões quando adicionarmos novas versões e modelos. Esta entrega é uma refatoração, sem novas promessas de funcionalidades.
+
 ## Como funciona
 
 - **Frontend:** React + TypeScript + Vite.
