@@ -40,3 +40,7 @@ Novos componentes devem reutilizar tokens e padrões existentes. Alterações es
 ## Identidade da marca
 
 A especificação de marca, cores e aplicações está em [brand.md](brand.md). O símbolo oficial é um SVG pequeno, independente de assets externos. Alterações futuras devem revisar ambos os documentos.
+
+## Processo obrigatório para novas telas
+
+Aplicar o [método de frontend](frontend-design-method.md) antes de implementar novas telas: contexto real, plano visual, crítica anti-template, wireframe, construção, testes e revisão visual. O Design System descreve os tokens; o método descreve como questioná-los e utilizá-los.
