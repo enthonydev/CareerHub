@@ -111,3 +111,7 @@ O processo de frontend agora segue um [método de direção e crítica visual](d
 ### Modelos de currículo
 
 Os PDFs de referência **Linha Azul (TI)** e **Recepção** foram identificados, mas os modelos exatos ainda não foram reproduzidos. Os estilos experimentais que fingiam representar essas referências foram retirados. O estúdio mantém dois estilos provisórios, sem qualquer alegação de fidelidade. O próximo trabalho é preservar a diagramação real dos PDFs, substituindo apenas os dados pessoais por campos editáveis.
+
+### Reprodução dos currículos de referência
+
+O estúdio agora possui as diagramações **TI · linhas azuis** e **Recepcionista · preto** a partir dos PDFs originais (não publicados). Campos de contato, objetivo, experiência, formação, cursos, competências e idiomas são independentes e editáveis; seções sem conteúdo não aparecem no documento. A importação de JSON v1 continua compatível. A comparação visual lado a lado e a conferência da paginação A4 ainda são etapas pendentes; não declaramos cópia perfeita.
