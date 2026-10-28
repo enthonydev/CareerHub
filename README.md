@@ -59,7 +59,7 @@ Acesse http://localhost:5173. Para testar: `python -m pytest` em `backend` e `np
 
 > O notebook-alvo tem Core i3-7020U, 8 GB e HDD. Por isso, priorizo uma experiência leve e sem Docker, banco de dados ou IA pesada local.
 
-O tema escolhido fica salvo no navegador, mesmo sem ativar o salvamento do perfil. A transição é suave e respeita a preferência de movimento reduzido do sistema.
+O tema escolhido fica salvo no navegador, mesmo sem ativar o salvamento do perfil. A interface usa uma paleta própria para claro e escuro, transições leves, navegação responsiva e respeita a preferência de movimento reduzido do sistema. O objetivo é manter boa experiência até em máquinas antigas.
 
 ## Como funciona
 
@@ -77,3 +77,7 @@ As decisões e os aprendizados ficam públicos na [documentação de processo](d
 
 ---
 Feito com curiosidade, código gerado com IA e revisão contínua.
+
+### Design e experiência
+
+O frontend é parte do produto, não só uma vitrine: legibilidade, contraste, estados de foco, feedback de ações, navegação em telas pequenas, impressão limpa e movimentos discretos entram nos critérios de aceite. As decisões visuais estão registradas em [Design System](docs/design-system.md).
