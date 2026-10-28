@@ -24,11 +24,11 @@ A tipografia é **Plus Jakarta Sans**, disponível sob SIL Open Font License, in
 
 ## Experimente
 
-A [prévia no GitHub Pages](https://enthonydev.github.io/CareerHub/) permite preencher seu perfil, importar/exportar JSON, usar um estúdio de currículo com edição por campos, dois estilos, prévia ao vivo e impressão em PDF e escolher entre **modo claro e escuro** na aba Configurações.
+A [prévia no GitHub Pages](https://enthonydev.github.io/CareerHub/) permite preencher seu perfil, importar/exportar JSON, usar um estúdio de currículo com edição por campos, dois modelos baseados em referências aprovadas, prévia ao vivo e impressão em PDF e escolher entre **modo claro e escuro** na aba Configurações.
 
 **Privacidade:** você pode ativar o salvamento automático neste navegador. É opcional e não deve ser usado em computadores compartilhados. A limpeza dos dados do navegador pode apagar o perfil, portanto mantenha um backup JSON. Nenhum dado desses recursos é enviado ao GitHub ou à OpenAI.
 
-O estúdio atual utiliza os campos do perfil, mostra o documento em tempo real e oferece os estilos Essencial e Contemporâneo; ainda não há reordenação avançada de seções nem geração DOCX. Importação de PDF/DOCX, templates avançados, notas ATS, vagas, análise LinkedIn e OpenAI **ainda estão em desenvolvimento**.
+O estúdio atual utiliza os campos do perfil, mostra o documento em tempo real e oferece os modelos Linha Azul (TI) e Recepção Clássico; ainda não há reordenação avançada de seções nem geração DOCX. Importação de PDF/DOCX, templates avançados, notas ATS, vagas, análise LinkedIn e OpenAI **ainda estão em desenvolvimento**.
 
 ## O que estou construindo
 
@@ -107,3 +107,7 @@ O frontend é parte do produto, não só uma vitrine: legibilidade, contraste, e
 ## Padrão de design
 
 O processo de frontend agora segue um [método de direção e crítica visual](docs/frontend-design-method.md), adaptado de princípios da skill oficial Frontend Design da Anthropic. Novas telas precisam justificar suas escolhas e passar por revisão visual, evitando o estilo genérico de dashboards gerados por IA.
+
+### Modelos de currículo
+
+Os dois modelos iniciais do estúdio são baseados em PDFs de referência aprovados anteriormente: **Linha Azul · TI**, com títulos azul-acinzentados e divisórias finas, e **Recepção · Clássico**, com cabeçalho centralizado, nome destacado em maiúsculas e linhas pretas mais marcantes. Os PDFs originais são referências privadas e **não são publicados no GitHub**. A renderização usa texto real editável, não uma imagem do currículo. A fidelidade ainda é aproximada até o editor suportar experiências, datas, formação e outros campos estruturados. [Especificação](docs/resume-templates.md).

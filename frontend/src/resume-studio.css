@@ -7,3 +7,23 @@
 @media(max-width:650px){.studio-heading{align-items:start;flex-direction:column}.studio-export{width:100%}.studio-fields{padding:20px}.studio-toolbar small{width:100%;margin:4px 0 0}.resume-document{min-height:480px;padding:24px;aspect-ratio:auto}}
 @media(prefers-reduced-motion:reduce){.studio-shell{animation:none}.studio-tab{transition:none}}
 @media print{@page{size:A4;margin:0}.sidebar,.topbar,.studio-heading,.studio-toolbar,.studio-fields,.preview-top,.preview-caption,footer{display:none!important}.app,.main,.studio-shell,.studio-columns,.studio-preview{display:block!important;margin:0!important;padding:0!important;border:0!important;max-width:none!important;width:100%!important;background:#fff!important}.resume-document{display:block!important;border:0!important;box-shadow:none!important;width:210mm!important;max-width:none!important;min-height:297mm!important;aspect-ratio:auto!important;padding:18mm!important;margin:0!important;break-inside:auto}.resume-document section{break-inside:avoid}.resume-document p{color:#354155!important}}
+
+
+/* Reference-backed CV templates. All printable content remains selectable text. */
+.resume-document.resume-blue,.resume-document.resume-reception{border-top:0;box-sizing:border-box;background:#fff!important;color:#282828!important;box-shadow:0 14px 36px #17264116;font-style:normal}
+.resume-blue{font-family:Arial,Helvetica,sans-serif!important;padding:32px 22px!important;letter-spacing:0!important}
+.resume-blue .resume-document-header{text-align:center;border-bottom:0;margin:0 0 25px;padding:0}
+.resume-blue .resume-document-header h2{font-family:Arial,Helvetica,sans-serif;font-size:25px;letter-spacing:0;font-weight:700;color:#3a3a3a;line-height:1.2;margin:0 0 7px}
+.resume-blue .resume-document-header p{color:#666;font-size:11px}
+.resume-blue section{margin:0 0 18px!important}
+.resume-blue h3{font-size:12px!important;letter-spacing:0!important;color:#416b8b!important;border-bottom:1px solid #bfd0db!important;padding:0 0 4px!important;margin:0 0 9px!important;font-weight:750;text-transform:uppercase}
+.resume-blue section p{font-size:11px!important;line-height:1.32!important;color:#414141!important;white-space:pre-wrap}
+.resume-reception{font-family:"Arial Narrow","Liberation Sans Narrow",Arial,sans-serif!important;padding:26px 28px!important;letter-spacing:0!important}
+.resume-reception .resume-document-header{text-align:center;border-bottom:4px solid #121212!important;margin:0 0 27px!important;padding:0 0 26px!important}
+.resume-reception .resume-document-header h2{font-family:"Arial Narrow","Liberation Sans Narrow",Arial,sans-serif!important;font-stretch:condensed;font-size:34px!important;font-weight:800!important;letter-spacing:-.025em!important;line-height:1.12!important;text-transform:uppercase!important;color:#111!important;margin:0 0 7px!important}
+.resume-reception .resume-document-header p{font-size:12px!important;font-weight:650!important;color:#222!important}
+.resume-reception section{margin:0 0 24px!important}
+.resume-reception h3{font-size:13px!important;letter-spacing:0!important;color:#101010!important;border-bottom:2px solid #111!important;margin:0 0 8px!important;padding:0 0 5px!important;font-weight:800!important;text-transform:uppercase}
+.resume-reception section p{color:#1c1c1c!important;font-size:12px!important;line-height:1.55!important;white-space:pre-wrap}
+@media(max-width:650px){.resume-blue,.resume-reception{padding:23px 18px!important}.resume-reception .resume-document-header h2{font-size:27px!important}}
+@media print{.resume-blue,.resume-reception{padding:18mm 14mm!important;box-shadow:none!important;min-height:297mm!important}.resume-document section{break-inside:auto}.resume-document h3{break-after:avoid}.resume-document p{orphans:2;widows:2}}
