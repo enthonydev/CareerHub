@@ -66,3 +66,10 @@
 - [x] Isolar os estilos específicos do currículo.
 - [ ] Validar compilação e verificar preservação do editor, alternância de estilos e PDF no navegador.
 - [ ] Reduzir gradualmente o CSS legado restante, sem mudanças visuais não testadas.
+
+## Modelos de referência
+
+- [x] Estilos Linha Azul (TI) e Recepção Clássico implementados a partir de referências reais.
+- [ ] Comparação visual de PDF exportado com os PDFs de referência.
+- [ ] Campos estruturados de contato, cargos, datas, experiência, formação, cursos e idiomas.
+- [ ] Ajuste automático da distribuição vertical sem estourar páginas ou deixar lacuna inferior excessiva.
