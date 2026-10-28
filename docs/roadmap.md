@@ -4,8 +4,9 @@
 |---|---|---|
 | S0 | Fundação frontend/backend, GitHub Pages, CI | Integrado; validação local pendente |
 | S1a | Perfil editável e importação/exportação JSON no Pages | Validado pelo usuário |
-| S1b | Salvamento opt-in no navegador e editor textual com prévia | Em revisão |
-| S1c | Persistência local segura no backend, upload e backup | Planejado |
+| S1b | Salvamento opt-in no navegador e editor textual com prévia | Validado pelo usuário |
+| S1c | Configurações: temas claro/escuro, transição e preferência local | Em revisão |
+| S1d | Persistência local segura no backend, upload e backup | Planejado |
 | S2 | Templates avançados, versões e exportação DOCX | Planejado |
 | S3 | Avaliação de currículo com rubrica 0–10 | Planejado |
 | S4 | Vagas, requisitos e compatibilidade explicável | Planejado |
@@ -32,3 +33,12 @@
 - Editor de currículo com prévia e impressão/PDF pelo navegador.
 - Nenhum envio de dados a servidor; backup JSON disponível.
 - Build, fluxo manual e layout responsivo verificados.
+
+## Critérios de aceite S1c
+
+- Aba Configurações navegável no Pages.
+- Seleção clara/escura persistente após recarregar.
+- Transição suave e leve, sem bloqueio do navegador, com redução de movimento respeitada.
+- Navegação por teclado com foco visível, visual mobile e tipografia consistente.
+- Prévia de currículo para impressão permanece branca em ambos os temas.
+- README atualizado e verificações de build e responsividade.

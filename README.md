@@ -12,7 +12,7 @@ Comecei o CareerHub porque queria avaliar currículos, compará-los com vagas e 
 
 ## Experimente
 
-A [prévia no GitHub Pages](https://enthonydev.github.io/CareerHub/) permite preencher seu perfil, importar/exportar JSON e usar um editor básico de currículo com prévia e impressão em PDF.
+A [prévia no GitHub Pages](https://enthonydev.github.io/CareerHub/) permite preencher seu perfil, importar/exportar JSON, usar um editor básico de currículo com prévia e impressão em PDF e escolher entre **modo claro e escuro** na aba Configurações.
 
 **Privacidade:** você pode ativar o salvamento automático neste navegador. É opcional e não deve ser usado em computadores compartilhados. A limpeza dos dados do navegador pode apagar o perfil, portanto mantenha um backup JSON. Nenhum dado desses recursos é enviado ao GitHub ou à OpenAI.
 
@@ -26,6 +26,7 @@ O editor atual é textual e básico. Importação de PDF/DOCX, templates avança
 | Perfil e JSON portátil no navegador | Disponível |
 | Salvamento automático opcional e editor textual com prévia/PDF | Disponível (básico) |
 | Perfil persistente no computador | Próxima etapa |
+| Configurações e tema claro/escuro | Disponível |
 | Templates avançados e exportação DOCX | Planejado |
 | Avaliação 0–10 e compatibilidade com vagas | Planejado |
 | Adaptação de currículo, LinkedIn e OpenAI opcional | Planejado |
@@ -58,6 +59,8 @@ Acesse http://localhost:5173. Para testar: `python -m pytest` em `backend` e `np
 
 > O notebook-alvo tem Core i3-7020U, 8 GB e HDD. Por isso, priorizo uma experiência leve e sem Docker, banco de dados ou IA pesada local.
 
+O tema escolhido fica salvo no navegador, mesmo sem ativar o salvamento do perfil. A interface usa uma paleta própria para claro e escuro, transições leves, navegação responsiva e respeita a preferência de movimento reduzido do sistema. O objetivo é manter boa experiência até em máquinas antigas.
+
 ## Como funciona
 
 - **Frontend:** React + TypeScript + Vite.
@@ -74,3 +77,7 @@ As decisões e os aprendizados ficam públicos na [documentação de processo](d
 
 ---
 Feito com curiosidade, código gerado com IA e revisão contínua.
+
+### Design e experiência
+
+O frontend é parte do produto, não só uma vitrine: legibilidade, contraste, estados de foco, feedback de ações, navegação em telas pequenas, impressão limpa e movimentos discretos entram nos critérios de aceite. As decisões visuais estão registradas em [Design System](docs/design-system.md).
