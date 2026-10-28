@@ -88,3 +88,12 @@
 - [x] Compatibilidade com JSON v1; novos campos opcionais em importações antigas.
 - [ ] Confrontar PDF gerado e original lado a lado em A4 e ajustar métricas finas.
 - [ ] Teste visual real no navegador; impressão multipágina para conteúdo extenso.
+
+## UX fora do editor de currículos
+
+- [x] Reorganizar a home em tarefa principal, progresso real e navegação clara.
+- [x] Retirar elementos decorativos repetitivos e mensagens artificiais.
+- [x] Centralizar input de importação JSON para Perfil e Configurações.
+- [ ] Validação visual e de teclado nos dois temas e em dispositivos reais.
+- [ ] Refinar Perfil e Configurações com base em testes de uso.
+- [ ] Trabalho de fidelidade dos templates pausado por solicitação do responsável.
