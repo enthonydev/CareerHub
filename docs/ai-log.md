@@ -37,3 +37,7 @@ O direcionamento humano pediu um produto que não tivesse aparência de UI gené
 ## 2026-10-28 — UX: home e Configurações
 
 A pedido do responsável, o frontend deixou de usar o painel vazio e introduziu uma home com ações reais. Foi removido o grande seletor redundante de tema; Configurações concentra salvamento e portabilidade. Fonte Plus Jakarta Sans pesquisada, com licença OFL e instalada localmente. A IA gerou código e documentação, o CI verifica build e testes, e a revisão visual real ainda deve ser feita no navegador.
+
+## 2026-10-28 — Redesenho do estúdio de currículo
+
+Após crítica de que o design ainda parecia uma interface gerada por template, a implementação priorizou a tarefa central: editar um documento. O editor foi reestruturado em campos e prévia A4, com dois estilos visuais distintos e impressão. Mudança gerada com IA e orientada por demanda humana, sujeita a build, revisão funcional e avaliação visual real. README atualizado no mesmo PR.
