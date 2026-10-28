@@ -99,3 +99,7 @@ Feito com curiosidade, código gerado com IA e revisão contínua.
 ### Design e experiência
 
 O frontend é parte do produto, não só uma vitrine: legibilidade, contraste, estados de foco, feedback de ações, navegação em telas pequenas, impressão limpa e movimentos discretos entram nos critérios de aceite. As decisões visuais estão registradas em [Design System](docs/design-system.md).
+
+## Padrão de design
+
+O processo de frontend agora segue um [método de direção e crítica visual](docs/frontend-design-method.md), adaptado de princípios da skill oficial Frontend Design da Anthropic. Novas telas precisam justificar suas escolhas e passar por revisão visual, evitando o estilo genérico de dashboards gerados por IA.
