@@ -41,3 +41,7 @@ A pedido do responsável, o frontend deixou de usar o painel vazio e introduziu 
 ## 2026-10-28 — Redesenho do estúdio de currículo
 
 Após crítica de que o design ainda parecia uma interface gerada por template, a implementação priorizou a tarefa central: editar um documento. O editor foi reestruturado em campos e prévia A4, com dois estilos visuais distintos e impressão. Mudança gerada com IA e orientada por demanda humana, sujeita a build, revisão funcional e avaliação visual real. README atualizado no mesmo PR.
+
+## 2026-10-28 — Refatoração do estúdio
+
+Código gerado com auxílio de IA para dividir o editor em módulo próprio (`resume-studio.tsx` e CSS dedicado), mantendo estado do perfil no componente principal. Não é redesign nem funcionalidade nova. Verificação de build no CI e teste manual posterior são obrigatórios. README atualizado no mesmo PR.
