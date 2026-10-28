@@ -73,3 +73,10 @@
 - [ ] Comparação visual de PDF exportado com os PDFs de referência.
 - [ ] Campos estruturados de contato, cargos, datas, experiência, formação, cursos e idiomas.
 - [ ] Ajuste automático da distribuição vertical sem estourar páginas ou deixar lacuna inferior excessiva.
+
+## Correção de rumo: fidelidade dos templates
+
+- [x] Remover opções estilizadas incorretamente como se fossem os PDFs aprovados.
+- [ ] Reproduzir fielmente as páginas originais, sem dados pessoais nas referências públicas.
+- [ ] Criar campos de conteúdo mantendo posições, tamanhos, linhas, espaçamento e estrutura editorial.
+- [ ] Validar lado a lado com os originais e PDF impresso antes de afirmar conclusão.

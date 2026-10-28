@@ -49,3 +49,7 @@ Código gerado com auxílio de IA para dividir o editor em módulo próprio (`re
 ## 2026-10-28 — Templates pessoais de referência
 
 Foram localizados os PDFs privados usados anteriormente na preparação profissional. A implementação transpôs as características verificáveis: Linha Azul, de TI, com cabeçalho centralizado e seções com linhas azuis finas; Recepção Clássico, com cabeçalho centralizado e divisórias pretas robustas. Os arquivos originais não foram adicionados ao GitHub. Ainda falta comparação renderizada da saída, e o editor não possui campos estruturados suficientes para cópia exata da disposição original.
+
+## 2026-10-28 — Correção de implementação inadequada
+
+O usuário reprovou os supostos templates Linha Azul e Recepção: as alterações de CSS não preservavam a diagramação dos PDFs. As mudanças visuais imprecisas foram revertidas. Os originais permanecem privados. O trabalho de fidelidade será tratado como reprodução verificável, não criação de novo estilo.

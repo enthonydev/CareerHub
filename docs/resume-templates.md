@@ -33,3 +33,7 @@ O seletor do editor oferece essas duas apresentações, com tipografia, bordas, 
 ## Limitações conhecidas
 
 O modelo de dados atual só tem nome, headline, objetivo, competências e campo livre de histórico; não contém contatos estruturados, experiência por item, datas, cursos, formação e idiomas separados. Por isso o template **ainda não é uma reprodução fiel**. Não fabricar contatos, datas ou seções. O próximo desenvolvimento deve criar um schema estruturado e prévia paginada, medir diferenças com documentos de teste fictícios e preservar a portabilidade do JSON v1.
+
+## Retificação
+
+A implementação inicial desses templates foi reprovada: foram criados estilos aproximados em vez de preservar integralmente os PDFs. Os estilos foram revertidos. Este documento é **uma especificação incompleta de referência**, não prova de fidelidade. O layout final precisa ser comparado diretamente aos documentos em escala A4, com dados neutralizados; não usar thumbnails genéricas ou interpretações livres.
