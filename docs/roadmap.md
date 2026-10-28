@@ -59,3 +59,10 @@
 - Alternar entre dois estilos de apresentação distintos.
 - Imprimir em A4 sem controles da interface.
 - Checar versão mobile e impressão, sem alegar revisão visual não realizada.
+
+## Refatoração do estúdio
+
+- [x] Extrair a tela do currículo para componente independente.
+- [x] Isolar os estilos específicos do currículo.
+- [ ] Validar compilação e verificar preservação do editor, alternância de estilos e PDF no navegador.
+- [ ] Reduzir gradualmente o CSS legado restante, sem mudanças visuais não testadas.
