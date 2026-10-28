@@ -23,3 +23,5 @@ Implementação assistida por IA de salvamento opcional via localStorage e edito
 ## 2026-10-28 — S1c: configurações e temas
 
 Implementação com assistência de IA: aba Configurações, tema claro/escuro persistente via armazenamento local independente dos dados do perfil, transição CSS e opção `prefers-reduced-motion`. O currículo impresso mantém fundo branco. Critérios visuais dependem de conferência no navegador; build automatizado será verificado no PR.
+
+**Refinamento visual solicitado:** elevar o frontend a padrão de produto profissional, com tipografia consistente, espaçamentos, tratamento de foco, responsividade, microinterações e movimento reduzido. Adicionado design system versionado, sem frameworks pesados de animação.
