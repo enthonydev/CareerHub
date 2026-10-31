@@ -91,6 +91,10 @@ A prévia é publicada por um **único workflow**: [Prévia do CareerHub no GitH
 
 Se aparecer 404, confira a [aba Actions](https://github.com/enthonydev/CareerHub/actions/workflows/pages.yml) e o [guia de deploy](docs/deploy.md). Não use o template genérico “Deploy static content to Pages” para publicar a raiz do repositório: ela não contém o build do frontend.
 
+## Qualidade de interface
+
+Não queremos um painel genérico com gradientes e cartões repetidos. O processo de UI agora exige brief da tarefa, direção visual, revisão de anti-padrões, estados de interação e inspeção visual real antes de declarar a tela pronta. Veja o [processo de revisão de design](docs/design-review-process.md).
+
 ## Diário de desenvolvimento
 
 As decisões e os aprendizados ficam públicos na [documentação de processo](docs/process.md) e no [diário de IA](docs/ai-log.md). Cada PR deve incluir uma atualização do README quando houver mudança perceptível no produto, além de testes, limitações e critérios de aceite.
